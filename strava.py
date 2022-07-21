@@ -35,7 +35,7 @@ import creds
 #print(data)
 
 # Step 4: Use your refresh token to retrieve a new access token (if expired) --- note depends on Step 1-3
-##Get the tokens from file to connect to Strava
+# Get the tokens from file to connect to Strava
 with open('strava_tokens.json') as json_file:
     strava_tokens = json.load(json_file)
 
