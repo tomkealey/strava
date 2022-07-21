@@ -114,14 +114,15 @@ venv.bak/
 creds.py
 
 # Data
-strava_activities_all_fields.csv
-strava_activities.csv
-strava_tokens.json
+data/
 
 # Script
 strava.sh
 logs/
 launchd/
+
+# Output
+output/
 
 # Spyder project settings
 .spyderproject

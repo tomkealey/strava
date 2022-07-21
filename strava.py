@@ -26,17 +26,17 @@ import creds
 #strava_tokens = response.json()
 #
 ##Save tokens to file
-#with open('strava_tokens.json', 'w') as outfile:
+#with open('./data/strava_tokens.json', 'w') as outfile:
 #    json.dump(strava_tokens, outfile)
 #
 ##Open JSON file and print the file contents to check it's worked properly
-#with open('strava_tokens.json') as check:
+#with open('./data/strava_tokens.json') as check:
 #  data = json.load(check)
 #print(data)
 
 # Step 4: Use your refresh token to retrieve a new access token (if expired) --- note depends on Step 1-3
 # Get the tokens from file to connect to Strava
-with open('strava_tokens.json') as json_file:
+with open('./data/strava_tokens.json') as json_file:
     strava_tokens = json.load(json_file)
 
 # If access_token has expired then use the refresh_token to get the new access_token
@@ -56,7 +56,7 @@ if strava_tokens['expires_at'] < time.time():
     new_strava_tokens = response.json()
 
 # Save new tokens to file
-    with open('strava_tokens.json', 'w') as outfile:
+    with open('./data/strava_tokens.json', 'w') as outfile:
         json.dump(new_strava_tokens, outfile)
 
 # Use new Strava tokens from now
@@ -64,7 +64,7 @@ if strava_tokens['expires_at'] < time.time():
 
 # Open the new JSON file and print the file contents 
 # to check it's worked properly
-with open('strava_tokens.json') as check:
+with open('./data/strava_tokens.json') as check:
   data = json.load(check)
 #print(data)
 
@@ -160,4 +160,4 @@ print("Total:", len(activities), "activities")
 
 # Export your activities file as a csv 
 # to the folder you're running this script in
-activities.to_csv('strava_activities.csv')
+activities.to_csv('./output/strava_activities.csv')
