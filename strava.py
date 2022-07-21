@@ -4,10 +4,6 @@ import json
 import time
 import creds
 
-
-# Reference: Article by Benji K Johnson
-# https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86
-
 # Step 1: Copy and paste this link into your browser
 # http://www.strava.com/oauth/authorize?client_id=[REPLACE_WITH_YOUR_CLIENT_ID]&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=profile:read_all,activity:read_all
 
