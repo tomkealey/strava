@@ -152,7 +152,7 @@ while True:
         activities.loc[x + (page-1)*200,'achievement_count'] = r[x]['achievement_count']
         activities.loc[x + (page-1)*200,'external_id'] = r[x]['external_id']
         
-    print("Processing:", page, "page")
+    #print("Processing:", page, "page")
     # increment page
     page += 1
 

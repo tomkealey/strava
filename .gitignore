@@ -120,6 +120,8 @@ strava_tokens.json
 
 # Script
 strava.sh
+logs/
+launchd/
 
 # Spyder project settings
 .spyderproject
