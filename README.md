@@ -5,6 +5,7 @@
 ## Strava
 This script is based on a brilliant article *Using Python to Connect to Strava’s API and Analyse Your Activities — Dummies Guide* by Benji K Johnson [link](https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86)
 
+### Outline
 1. Create your App/API Connection
 2. Authentication
 3. Getting your Access Tokens
