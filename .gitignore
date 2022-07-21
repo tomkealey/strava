@@ -118,6 +118,9 @@ strava_activities_all_fields.csv
 strava_activities.csv
 strava_tokens.json
 
+# Script
+strava.sh
+
 # Spyder project settings
 .spyderproject
 .spyproject
