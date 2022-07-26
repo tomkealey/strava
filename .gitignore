@@ -114,15 +114,15 @@ venv.bak/
 creds.py
 
 # Data
-data/
+data/*.*
 
 # Script
 strava.sh
-logs/
-launchd/
+logs/*.*
+launchd/*.*
 
 # Output
-output/
+output/*.*
 
 # Spyder project settings
 .spyderproject
